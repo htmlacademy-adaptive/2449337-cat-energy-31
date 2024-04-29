@@ -12,14 +12,18 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
- modul2-task1
+
       <div class="main-header__logo">
         <a class="main-header__logotype" href="index.html">
-          <img src="#" width="60" height="50" alt="Логотип Кэт энерджи">
-          <img src="#" width="101" height="18" alt="Кэт энерджи">
+          <picture>
+            <source width="70" height="59" type="image/svg+xml" srcset="images/header-cat-desktop.svg 1x" media="(min-width: 1440px)">
+            <source width="60" height="50" type="image/svg+xml" srcset="images/header-cat-tablet.svg 1x" media="(min-width: 768px)">
+            <img class="header-cat-logo" src="images/header-cat-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+          </picture>
+          <img class="header-text-logo" src="images/header-text.svg" width="101" height="18" alt="Кэт энерджи">
         </a>
       </div>
- master
+
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -50,12 +54,16 @@
     <h1 class="visually-hidden">Кэт энерджи</h1>
     <section class="program">
       <div class="program__wrapper">
- modul2-task1
+
         <h2 class="program__title repeat-title">Функциональное питание для котов</h2>
         <p class="program__text">Занялся собой? Займись котом!</p>
-        <img src="#" width="280" height="270" alt="Продукция">
+        <picture>
+          <source width="552" height="499" type="image/jpeg" media="(min-width: 1440px)" srcset="images/index-corm-desktop@1x.jpg 1x, images/index-corm-desktop@2x.jpg 2x">
+          <source width="709" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="images/index-corm-tablet@1x.jpg 1x, images/index-corm-tablet@2x.jpg 2x">
+          <img class="index-corm" src="images/index-corm@1x.png" srcset="images/index-corm@2x.png 2x" width="280" height="270" alt="Продукция">
+        </picture>
         <a class="program__button button" href="#">Подобрать программу</a>
- master
+
       </div>
     </section>
     <section class="services">
@@ -79,9 +87,9 @@
     </section>
     <section class="work">
       <div class="work__wrapper">
- modul2-task1
+
         <h2 class="work__title repeat-title">Как это работает</h2>
- master
+
         <ol class="work__list">
           <li class="work__item work__item--one">
             <p class="work__text">Функциональное питание содержит только полезные питательные вещества.
@@ -103,7 +111,7 @@
       </div>
     </section>
     <section class="example">
- modul2-task1
+
       <div class="example__wrapper">
         <h2 class="example__title repeat-title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
@@ -118,23 +126,31 @@
         </div>
         <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
         <div class="example__slider">
-          <img src="#" width="280" height="256" alt="Толстый кот">
+          <picture>
+            <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-fat-big@1x.jpg 1x, images/cat-fat-big@1x.jpg 2x">
+            <img class="cat-fat" src="images/cat-fat-mobile@1x.jpg" srcset="images/cat-fat-mobile@2x.jpg 2x" width="280" height="256" alt="Толстый кот">
+          </picture>
           <button type="button">
             Ползунок
           </button>
-          <img src="#" width="280" height="256" alt="Худой кот">
+          <picture>
+            <img class="cat-skinny" src="images/cat-skinny-mobile@1x.jpg" srcset="images/cat-skinny-mobile@2x.jpg 2x" width="280" height="256" alt="Худой кот">
+          </picture>
         </div>
- master
+
       </div>
     </section>
     <section class="map">
       <div class="map__wrapper">
         <h2 class="visually-hidden">Где мы находимся</h2>
         <p class="map__text">Приглашаем к сотрудничеству дилеров!</p>
- modul2-task1
+
         <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img src="#" width="320" height="362" alt="Карта">
- master
+        <picture>
+          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+          <img class="map-image" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
+        </picture>
       </div>
     </section>
   </main>
@@ -142,7 +158,7 @@
     <div class="main-footer__wrapper">
       <section class="main-footer__link">
         <h2 class="visually-hidden">Ссылка на нас</h2>
- modul2-task1
+
         <a class="main-footer__link-cat" href="#">
           <img src="#" width="128" height="24" alt="Ссылка на нас">
         </a>
@@ -153,21 +169,21 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
- master
+
                 <p class="visually-hidden">ВК</p>
               </a>
             </li>
             <li class="social__item">
- modul2-task1
+
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
- master
+
                 <p class="visually-hidden">Ютуб</p>
               </a>
             </li>
             <li class="social__item">
- modul2-task1
+
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
- master
+
                 <p class="visually-hidden">Телеграм</p>
               </a>
             </li>
@@ -177,9 +193,9 @@
       <section class="academy">
         <div class="academy__wrapper">
           <h2 class="visually-hidden">Ссылка на академию</h2>
- modul2-task1
+
           <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
- master
+
             <p class="academy__link-text">HTML Academy</p>
             <img src="../raw/images/footer-logo_html.svg" width="27" height="34" alt="Логотип академии">
           </a>
