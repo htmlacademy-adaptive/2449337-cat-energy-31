@@ -3,17 +3,56 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 80px;
 }
 
 .services__text {
   font-size: 14px;
   line-height: 18px;
+  color: #444444;
 }
 
 .services__button {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   color: #000000;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
+  padding-right: 47px;
+  position: relative;
+}
+
+.services__button:hover::after {
+  background-position: right 0 top 0;
+}
+
+.services__button::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 10px;
+  top: 7px;
+  right:0;
+  background-image: url("../../icons/stack.svg#arrow");
+  background-repeat:no-repeat;
+  background-size: 32px 10px;
+  background-position: right 8px top 0;
+}
+
+.services__item--skinny {
+  background-image: url("../../icons/stack.svg#services-cat-skinny");
+  background-size: 50px 53px;
+  background-repeat: no-repeat;
+  list-style-type: none;
+}
+
+
+.services__item--fat {
+  background-image: url("../../icons/stack.svg#services-cat-fat");
+  background-size: 67px 50px;
+  background-repeat: no-repeat;
+  list-style-type: none;
 }

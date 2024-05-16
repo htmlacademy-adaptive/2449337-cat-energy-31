@@ -2,10 +2,43 @@
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 }
 
 .work__text {
   color: #444444;
   font-size: 14px;
   line-height: 18px;
+}
+
+.work__item--one {
+  background-image: url("../../icons/stack.svg#work-sheet1");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  min-height: 60px;
+  padding-left: 80px;
+}
+
+.work__item--two {
+  background-image: url("../../icons/stack.svg#work-powder2");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  min-height: 60px;
+  padding-left: 80px;
+}
+
+.work__item--three {
+  background-image: url("../../icons/stack.svg#work-food3");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  min-height: 60px;
+  padding-left: 80px;
+}
+
+.work__item--four {
+  background-image: url("../../icons/stack.svg#work-time4");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  min-height: 60px;
+  padding-left: 80px;
 }

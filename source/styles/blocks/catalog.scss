@@ -1,7 +1,12 @@
+.catalog__item {
+  list-style-type: none;
+}
+
 .catalog__title {
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
 }
 
 .catalog-card__item-title {
@@ -14,25 +19,11 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-}
-
-.catalog-card__title-more {
-  color: #111111;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.catalog-card__text-more {
-  font-size: 12px;
-  line-height: 16px;
+  font-weight: 400;
 }
 
 .catalog-card__button {
-  font-family: "Oswald", "Arial Narrow", sans-serif;
   text-decoration: none;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .catalog-card__weight {
@@ -49,6 +40,26 @@
 
 .catalog-card__cost {
   color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-card__card-more {
+  background-image: url("../../icons/stack.svg#catalog-plus");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 95px 0;
+  padding-top: 53px;
+}
+
+.catalog-card__title-more {
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-card__text-more {
   font-size: 12px;
   line-height: 16px;
 }

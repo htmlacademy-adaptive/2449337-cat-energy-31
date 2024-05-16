@@ -2,6 +2,7 @@
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 }
 
 .example__weight-mass {
@@ -41,4 +42,42 @@
   color: #444444;
   font-size: 16px;
   line-height: 24px;
+}
+
+.example__slider {
+  position: relative;
+}
+
+.example__cat-skinny {
+  display: inline-block;
+}
+
+.example__cat-fat {
+  display: inline-block;
+}
+
+.example__button {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+}
+
+.example__button::after {
+  content:  "";
+  position: absolute;
+  display: block;
+  border: #666666 3px solid;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  left: -18px;
+  top: 108px;
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#slider-arrow");
+  background-repeat: no-repeat;
+  background-size: 24px 18px;
+  background-position: 8px 11px;
 }

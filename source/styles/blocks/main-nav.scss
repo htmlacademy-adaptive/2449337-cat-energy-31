@@ -6,3 +6,13 @@
   text-decoration: none;
 }
 
+.main-nav__list-item {
+  list-style-type: none;
+}
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border:none;
+  background-image: url("../../icons/stack.svg#menu-mobile");
+}

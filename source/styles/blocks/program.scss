@@ -1,5 +1,8 @@
 .program {
-  background-color: #68b738;
+  background-color: #504f54;
+  background-image: linear-gradient(to top, #ffffff 0, #ffffff 178px, rgba(104, 183, 56, 0.85) 178px, rgba(104, 183, 56, 0.85) 100%), url("../../images/index-corm-cat-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .program__title {
@@ -7,6 +10,8 @@
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .program__text {
@@ -14,11 +19,9 @@
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .program__button {
-  font-family: "Oswald", "Arial Narrow", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
   text-decoration: none;
 }

@@ -218,7 +218,7 @@
             </div>
             <a class="catalog-card__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item catalog-card">
+          <li class="catalog__item catalog-card catalog-card__card-more">
             <h3 class="catalog-card__title catalog-card__title-more">Показать еще 100500 товаров</h3>
             <p class="catalog-card__text catalog-card__text-more">На самом деле вкусов гораздо больше!</p>
             <a class="catalog-card__button catalog-card__unique-button" href="#">Показать все</a>
@@ -297,27 +297,25 @@
           <img src="images/footer-text.svg" width="128" height="24" alt="Ссылка на нас">
         </a>
       </section>
+      </section>
       <section class="social">
         <div class="social__wrapper">
           <h2 class="visually-hidden">Мы в соц сетях</h2>
           <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-
+            <li class="social__item social__link--vk">
+              <a class="social__link" href="https://vk.com/htmlacademy">
                 <p class="visually-hidden">ВК</p>
               </a>
             </li>
-            <li class="social__item">
+            <li class="social__item social__link--youtube">
 
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <p class="visually-hidden">Ютуб</p>
               </a>
             </li>
-            <li class="social__item">
+            <li class="social__item social__link--telegram">
 
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-
+              <a class="social__link" href="https://t.me/htmlacademy">
                 <p class="visually-hidden">Телеграм</p>
               </a>
             </li>
@@ -327,11 +325,11 @@
       <section class="academy">
         <div class="academy__wrapper">
           <h2 class="visually-hidden">Ссылка на академию</h2>
-
           <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-
             <p class="academy__link-text">HTML Academy</p>
-            <img src="images/footer-html.svg" width="27" height="34" alt="Логотип академии">
+            <svg class="academy__icon" width="27" height="34">
+              <use href="icons/stack.svg#footer-html"></use>
+            </svg>
           </a>
         </div>
       </section>
