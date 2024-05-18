@@ -1,3 +1,9 @@
+
+.catalog__wrapper {
+  padding: 20px;
+}
+
+
 .catalog__item {
   list-style-type: none;
 }
@@ -7,6 +13,9 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  margin: 0;
+
 }
 
 .catalog-card__item-title {

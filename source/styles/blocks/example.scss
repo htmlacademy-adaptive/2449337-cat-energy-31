@@ -1,8 +1,16 @@
+.example__wrapper {
+  padding: 20px;
+  background-color: #eaeaea;
+}
+
 .example__title {
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  margin: 0;
+
 }
 
 .example__weight-mass {

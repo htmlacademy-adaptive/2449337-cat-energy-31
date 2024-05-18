@@ -1,8 +1,15 @@
+.work__wrapper {
+  padding: 20px;
+}
+
 .work__title {
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  margin: 0;
+
 }
 
 .work__text {
@@ -10,6 +17,11 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+.work__item {
+  list-style-type: none;
+}
+
 
 .work__item--one {
   background-image: url("../../icons/stack.svg#work-sheet1");
