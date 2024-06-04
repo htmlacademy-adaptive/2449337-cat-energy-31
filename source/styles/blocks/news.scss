@@ -1,11 +1,42 @@
+
+.news {
+  border-top: 3px solid #68b738;
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 96px;
+  }
+}
+
 .news__wrapper {
   padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+  }
+
 }
 
 .news__text {
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .news__title {
@@ -13,8 +44,44 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-
   margin: 0;
+  margin-top: -10px;
+  position: relative;
+  display: inline-block;
+  background: #ffffff;
+  transform: translateY(-100%);
+  padding-right: 40px;
+  padding-left: 10px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-left: -40px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    display: inline-block;
+  }
+}
+
+.news__form {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 760px;
+  }
 
 }
 
@@ -22,6 +89,14 @@
   font-size: 20px;
   line-height: 26px;
   border: none;
+  padding: 15px 82px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 70px;
+    margin: 0;
+  }
 }
 
 .news__email {
@@ -29,4 +104,33 @@
   font-size: 20px;
   line-height: auto;
   text-transform: uppercase;
+  width: 232px;
+  height: 56px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 16px;
+  border: #f2f2f2 2px solid;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 336px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 456px;
+  }
+}
+
+.news__email:hover {
+  border: #cdcdcd 2px solid;
+}
+
+.news__email:focus {
+  border: #444444 2px solid;
+}
+
+.news__email:user-invalid {
+  border: 2px solid #ff8282;
 }

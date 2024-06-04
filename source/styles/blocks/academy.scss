@@ -1,5 +1,32 @@
+.academy__link {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.academy__link:active {
+  opacity: 30%;
+}
+
+.academy__icon {
+  color: #666666;
+}
+
+.academy__icon:hover {
+  fill: #68b738;
+  color: #68b738;
+}
+
 .academy__link-text {
   color: #444444;
+  margin: 0;
+  margin-right: 140px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
 }
 
 .academy__link {

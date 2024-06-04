@@ -1,5 +1,69 @@
+
+.map__catalog {
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
+}
+
+.map {
+  position: relative;
+  min-height: 474px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 598px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+  }
+}
+
+.map__grid-container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(90px, 1fr) min-content minmax(90px, 1fr);
+    background-color: #ffffff;
+  }
+}
+
+.map__wrapper {
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  width: auto;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/1;
+    grid-row: 2/2;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+}
+
 .map__section {
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+    width: 407px;
+    top: 95px;
+    left: 0;
+    padding: 60px 78px 60px 80px;
+  }
+
 }
 
 .map__text {
@@ -8,10 +72,69 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .map__address {
   color: #444444;
   font-size: 14px;
   line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
+
+.map__image {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
+}
+
+.map__interactive {
+  position: relative;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+  }
+}
+
