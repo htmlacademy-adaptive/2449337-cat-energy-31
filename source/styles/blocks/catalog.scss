@@ -210,6 +210,8 @@
 .catalog-card__cost-text,
 .catalog-card__cost-price {
   margin: 0;
+
+
 }
 
 .catalog-card__card-more {
@@ -278,26 +280,6 @@
     font-size: 16px;
     line-height: 18px;
   }
-}
-
-.catalog-card__card-more {
-  background-image: url("../../icons/stack.svg#catalog-plus");
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  background-position: 95px 0;
-  padding-top: 53px;
-}
-
-.catalog-card__title-more {
-  color: #111111;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.catalog-card__text-more {
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .catalog-card__unique-button {

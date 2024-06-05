@@ -15,6 +15,14 @@
 .example__wrapper {
   padding: 20px;
   position: relative;
+
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
 }
 
 .example__information {
@@ -214,6 +222,8 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
   }
+
+
 }
 
 .example__slider {
@@ -230,6 +240,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    margin: 0;
     margin-bottom: 85px;
   }
 }
@@ -253,7 +264,33 @@
     background-image: linear-gradient(to top, #f2f2f2, #f2f2f2 380px, #ffffff 380px, #ffffff);
   }
 }
+/*
+.example__button {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+}
 
+.example__button::after {
+  content:  "";
+  position: absolute;
+  display: block;
+  border: #666666 3px solid;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  left: -18px;
+  top: 108px;
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#slider-arrow");
+  background-repeat: no-repeat;
+  background-size: 24px 18px;
+  background-position: 8px 11px;
+}
+*/
 .example__button {
   position: absolute;
   width: 4px;
@@ -322,42 +359,4 @@
 .example__button:active::before {
   border: #5eaa2f 3px solid;
   opacity: 60%;
-}
-
-.example__slider {
-  position: relative;
-}
-
-.example__cat-skinny {
-  display: inline-block;
-}
-
-.example__cat-fat {
-  display: inline-block;
-}
-
-.example__button {
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  background-color: #666666;
-  border: none;
-  border-radius: 2px;
-}
-
-.example__button::after {
-  content:  "";
-  position: absolute;
-  display: block;
-  border: #666666 3px solid;
-  border-radius: 20px;
-  width: 40px;
-  height: 40px;
-  left: -18px;
-  top: 108px;
-  background-color: #ffffff;
-  background-image: url("../../icons/stack.svg#slider-arrow");
-  background-repeat: no-repeat;
-  background-size: 24px 18px;
-  background-position: 8px 11px;
 }

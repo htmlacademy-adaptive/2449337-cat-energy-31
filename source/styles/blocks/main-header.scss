@@ -21,6 +21,10 @@
 
 .main-header__logotype {
   text-decoration: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .main-header__logotype:hover {
@@ -30,6 +34,12 @@
 .main-header__logotype:active {
   opacity: 60%;
 }
+
+
+.main-header__logo {
+  z-index: 3;
+}
+
 
 .main-header__text-logo {
   padding: 10px 0;
@@ -42,6 +52,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 19px 0;
+
+    margin-left: 14px;
+
   }
 
 }
