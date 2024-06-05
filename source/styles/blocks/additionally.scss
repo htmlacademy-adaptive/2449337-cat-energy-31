@@ -56,7 +56,7 @@
 
   @media (min-width: $tablet-width) {
     border: #ebebeb 1px solid;
-    padding: 27px 36px;
+    padding: 26px 36px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -92,7 +92,7 @@
 
   margin: 0;
   margin-top: -10px;
-  margin-bottom: 46px;
+  margin-bottom: 27px;
   position: relative;
   display: inline-block;
   background: #ffffff;
@@ -105,12 +105,14 @@
     line-height: 32px;
     margin-left: -40px;
     padding: 0 40px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
     display: inline-block;
+    margin-bottom: 53px;
   }
 }
 
@@ -127,8 +129,8 @@
   line-height: 16px;
   text-transform: uppercase;
   font-weight: 400;
-
   margin: 13px 0;
+  margin-bottom: 0;
 
 
   @media (min-width: $tablet-width) {
@@ -150,6 +152,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 91px;
+    align-self: center;
   }
 }
 

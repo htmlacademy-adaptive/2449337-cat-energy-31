@@ -2,9 +2,11 @@
 .example {
   background-color: #eaeaea;
   position: relative;
+  margin-top: 39px;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to top, #eaeaea, #eaeaea 462px, #ffffff 462px, #ffffff);
+    margin-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 0;
   }
 
 }
@@ -69,7 +72,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 99px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,12 +93,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    width: 356px;
+    margin-bottom: 0;
   }
 }
 
 .example__weight {
-  border: 2px #cdcdcd solid;
+  border: 1px #cdcdcd solid;
   border-radius: 4px;
 
 }
@@ -112,6 +116,11 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 57px;
+    padding-bottom: 0;
   }
 }
 
@@ -140,8 +149,12 @@
 }
 
 .example__time {
-  border: 2px #cdcdcd solid;
+  border: 1px #cdcdcd solid;
   border-radius: 4px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .example__time-days {
@@ -199,18 +212,19 @@
     text-align: right;
     width: auto;
     margin-left: auto;
+    margin-top: 13px;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
-    margin-top: 55px;
+    text-align: left;
+    margin-top: 45px;
   }
 }
 
 .example__text {
   color: #444444;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -228,7 +242,7 @@
 
 .example__slider {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -242,6 +256,7 @@
     right: 0;
     margin: 0;
     margin-bottom: 85px;
+    margin-right: 21px;
   }
 }
 
@@ -264,33 +279,7 @@
     background-image: linear-gradient(to top, #f2f2f2, #f2f2f2 380px, #ffffff 380px, #ffffff);
   }
 }
-/*
-.example__button {
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  background-color: #666666;
-  border: none;
-  border-radius: 2px;
-}
 
-.example__button::after {
-  content:  "";
-  position: absolute;
-  display: block;
-  border: #666666 3px solid;
-  border-radius: 20px;
-  width: 40px;
-  height: 40px;
-  left: -18px;
-  top: 108px;
-  background-color: #ffffff;
-  background-image: url("../../icons/stack.svg#slider-arrow");
-  background-repeat: no-repeat;
-  background-size: 24px 18px;
-  background-position: 8px 11px;
-}
-*/
 .example__button {
   position: absolute;
   width: 4px;

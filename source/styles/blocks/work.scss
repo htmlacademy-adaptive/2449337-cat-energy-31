@@ -1,5 +1,15 @@
 .work__wrapper {
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-top: 74px;
+  }
 }
 
 .work__title {
@@ -16,6 +26,10 @@
     line-height: 60px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
+  }
+
 }
 
 .work__text {
@@ -27,7 +41,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 151px;
+    padding-top: 147px;
   }
 }
 
@@ -41,7 +55,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 247px 249px;
-    gap: 37px 137px;
+    gap: 37px 153px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,34 +69,33 @@
   min-height: 60px;
   padding-left: 80px;
   position: relative;
+  background-size: 60px 60px;
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
     padding-left: 0;
     background-position: 0 40px;
+    background-size: 80px 80px;
   }
 }
 .work__item--one {
   background-image: url("../../icons/stack.svg#work-sheet1");
-  background-size: 60px 60px;
   background-repeat: no-repeat;
 }
 
 .work__item--two {
   background-image: url("../../icons/stack.svg#work-powder2");
-  background-size: 60px 60px;
+
   background-repeat: no-repeat;
 }
 
 .work__item--three {
   background-image: url("../../icons/stack.svg#work-food3");
-  background-size: 60px 60px;
   background-repeat: no-repeat;
 }
 
 .work__item--four {
   background-image: url("../../icons/stack.svg#work-time4");
-  background-size: 60px 60px;
   background-repeat: no-repeat;
 }
 
@@ -102,41 +115,4 @@
     top: -40px;
     left: 112px;
   }
-}
-
-.work__item {
-  list-style-type: none;
-}
-
-
-.work__item--one {
-  background-image: url("../../icons/stack.svg#work-sheet1");
-  background-size: 60px 60px;
-  background-repeat: no-repeat;
-  min-height: 60px;
-  padding-left: 80px;
-}
-
-.work__item--two {
-  background-image: url("../../icons/stack.svg#work-powder2");
-  background-size: 60px 60px;
-  background-repeat: no-repeat;
-  min-height: 60px;
-  padding-left: 80px;
-}
-
-.work__item--three {
-  background-image: url("../../icons/stack.svg#work-food3");
-  background-size: 60px 60px;
-  background-repeat: no-repeat;
-  min-height: 60px;
-  padding-left: 80px;
-}
-
-.work__item--four {
-  background-image: url("../../icons/stack.svg#work-time4");
-  background-size: 60px 60px;
-  background-repeat: no-repeat;
-  min-height: 60px;
-  padding-left: 80px;
 }

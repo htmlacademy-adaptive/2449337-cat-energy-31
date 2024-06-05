@@ -1,7 +1,6 @@
-
-
 .catalog__wrapper {
   padding: 20px;
+  padding-top: 0;
 }
 
 
@@ -19,7 +18,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 245px 245px 245px 245px;
-    gap: 80px 63px;
+    gap: 63px 80px;
     width: 1220px;
   }
 }
@@ -31,8 +30,11 @@
   border-bottom: #ebebeb 1px solid;
   position: relative;
   width: 280px;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    display: block;
     border: none;
     width: 324px;
     background-image: linear-gradient(to bottom, #ffffff, #ffffff 60px, #f2f2f2 60px, #f2f2f2);
@@ -42,25 +44,16 @@
     width: 245px;
   }
 }
-/*
-.catalog__item::before {
-  content: "";
-  position: absolute;
-  position: fixed;
-  display: block;
-  width: 767px;
-  height: 1px;
-  background-color: #ebebeb;
-  right: 0;
-  bottom: 0;
-}*/
+
+.catalog-card__item-link  {
+  width: 140px;
+}
 
 .catalog-cards__image {
-  position: absolute;
-  top: 10px;
-  left: -36px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     top: 10px;
     left: 50%;
     transform: translate(-50%);
@@ -76,22 +69,22 @@
 
   margin: 0;
   padding-top: 27px;
-  border-top: #d9d9d9 1px solid;
-  padding-bottom: 41px;
-  border-bottom: #ebebeb 1px solid;
-  width: 100%;
-  text-align: center;
+  padding-bottom: 32px;
+  text-align: left;
 
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     border: none;
-    margin-left: -140px;
+    text-align: left;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -390px;
+    text-align: left;
+    margin-top: 27px;
+    margin-bottom: 50px;
   }
 
 }
@@ -108,15 +101,21 @@
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 400;
-
+  width: 80px;
   text-align: center;
 
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     font-size: 20px;
     line-height: 24px;
     padding-left: 0;
     padding-top: 242px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    padding-top: 214px;
   }
 }
 
@@ -187,12 +186,11 @@
 }
 
 .catalog-card__information {
-  padding-left: 104px;
   width: 140px;
-  margin: 0 auto;
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     margin-bottom: 32px;
     padding-left: 0;
     width: 250px;

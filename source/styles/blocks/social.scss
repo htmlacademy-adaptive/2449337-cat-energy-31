@@ -9,9 +9,10 @@
 
 .social__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 20px auto;
   padding: 0;
-  max-width: 150px;
+  max-width: 132px;
 }
 
 .social__item {
@@ -57,7 +58,5 @@
   mask-image: url("../../icons/stack.svg#telegram");
   mask-repeat: no-repeat;
   mask-size: 28px 22px;
-
-
   margin: 0;
 }

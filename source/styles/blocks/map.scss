@@ -38,8 +38,9 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/1;
     grid-row: 2/2;
-    padding: 20px;
     background-color: #ffffff;
+    justify-self: self-end;
+  //  margin-right: 0;
   }
 }
 
@@ -90,6 +91,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    text-align: right;
   }
 }
 
