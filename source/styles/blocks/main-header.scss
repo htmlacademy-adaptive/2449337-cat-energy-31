@@ -1,6 +1,6 @@
 .main-header {
   @media (min-width: $tablet-width) {
-   padding-top: 13px;
+    padding-top: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,10 +18,8 @@
 
 .main-header__logotype {
   text-decoration: none;
-
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .main-header__logotype:hover {
@@ -49,9 +47,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 19px 0;
-
     margin-left: 14px;
-
   }
-
 }

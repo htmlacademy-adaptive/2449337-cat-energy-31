@@ -14,6 +14,7 @@
 
 .main-footer__wrapper {
   padding: 0;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -40,5 +41,4 @@
 
 .main-footer__link-cat:active {
   opacity: 60%;
-
 }
