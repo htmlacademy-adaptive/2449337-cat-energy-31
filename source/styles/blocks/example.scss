@@ -297,7 +297,7 @@
   content: "";
   position: absolute;
   display: block;
-  border: #666666 3px solid;
+  border: #666666 2px solid;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -305,6 +305,8 @@
   top: 50%;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
 }
 
 .example__button::after {

@@ -212,7 +212,7 @@
 
 }
 
-.catalog-card__card-more {
+.catalog-card--card-more {
   background-image: url("../../icons/stack.svg#catalog-plus");
   background-repeat: no-repeat;
   background-size: 30px 30px;
@@ -231,11 +231,13 @@
 
 .catalog-card__information-more {
   margin-bottom: 21px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 82px;
     padding-left: 77px;
     padding-right: 77px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -255,10 +257,12 @@
   margin-top: 23px;
   margin-bottom: 8px;
   padding-top: 53px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
     padding-top: 185px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
