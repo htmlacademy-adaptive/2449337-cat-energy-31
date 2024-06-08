@@ -18,21 +18,18 @@
   padding: 20px;
   position: relative;
 
-
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 0;
   }
-
 }
 
 .example__information {
   @media (min-width: $desktop-width) {
     width: 436px;
   }
-
 }
 
 .example__title {
@@ -40,7 +37,6 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-
   margin: 0;
   margin-bottom: 40px;
 
@@ -101,7 +97,6 @@
 .example__weight {
   border: 1px #cdcdcd solid;
   border-radius: 4px;
-
 }
 
 .example__weight-mass {
@@ -236,8 +231,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
   }
-
-
 }
 
 .example__slider {
@@ -297,14 +290,14 @@
   content: "";
   position: absolute;
   display: block;
-  border: #666666 3px solid;
+  border: #666666 2px solid;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
   left: 50%;
   top: 50%;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
 }
 
 .example__button::after {

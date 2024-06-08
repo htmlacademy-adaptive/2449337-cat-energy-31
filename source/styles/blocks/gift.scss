@@ -21,7 +21,6 @@
     height: 288px;
     margin: 0;
   }
-
 }
 
 .gift__text {
@@ -60,16 +59,4 @@
     top: 56px;
     left: 83px;
   }
-}
-
-.gift::after {
-  content: "";
-  position: absolute;
-  top: 59px;
-  left: 101px;
-  background-image: url("../../icons/stack.svg#catalog-gift");
-  background-size: 78px 80px;
-  background-repeat: no-repeat;
-  width: 78px;
-  height: 80px;
 }

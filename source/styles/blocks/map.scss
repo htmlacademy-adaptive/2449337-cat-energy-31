@@ -1,5 +1,5 @@
 
-.map__catalog {
+.map--catalog {
   background-color: #f2f2f2;
 
   @media (min-width: $desktop-width) {
@@ -40,7 +40,6 @@
     grid-row: 2/2;
     background-color: #ffffff;
     justify-self: self-end;
-  //  margin-right: 0;
   }
 }
 
@@ -64,7 +63,6 @@
     left: 0;
     padding: 60px 78px 60px 80px;
   }
-
 }
 
 .map__text {
@@ -128,7 +126,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 100%;
     grid-column: 1/-1;
     grid-row: 1/-1;
 

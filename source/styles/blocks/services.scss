@@ -1,20 +1,18 @@
 .services__wrapper {
   padding: 20px;
   padding-bottom: 0;
- // margin-top: 20px;
 }
 
 .services__list {
   margin: 0;
   padding-left: 0;
-
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
   }
-
 }
 
 .services__title {
@@ -40,7 +38,6 @@
     padding-bottom: 73px;
     padding-top: 0;
   }
-
 }
 
 .services__text {
@@ -57,7 +54,6 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    width: 240px;
     width: 340px;
     margin: 0;
     padding-bottom: 55px;
@@ -68,7 +64,6 @@
     width: auto;
     padding-bottom: 0;
   }
-
 }
 
 .services__button {
@@ -88,7 +83,6 @@
     font-size: 20px;
     line-height: 1;
   }
-
 }
 
 .services__button:hover::after {
@@ -101,23 +95,17 @@
 }
 
 .services__button::after {
-
   content: "";
   position: absolute;
   display: block;
   width: 32px;
   height: 10px;
-
-  top: 11px;
+  top: 8px;
   right: 0;
   background-image: url("../../icons/stack.svg#arrow");
   background-repeat: no-repeat;
   background-size: 32px 10px;
   background-position: right 8px top 0;
-
-  @media (min-width: $desktop-width) {
-    top: 14px;
-  }
 }
 
 
@@ -137,18 +125,15 @@
     padding: 77px 52px 55px;
     width: 570;
   }
-
 }
 
 .services__item:not(:last-child) {
   margin-bottom: 20px;
 
-
   @media (min-width: $desktop-width) {
     margin-right: 80px;
     margin-bottom: 0;
   }
-
 }
 
 .services__item--skinny {
@@ -167,7 +152,6 @@
     background-position: 41px 52px;
     background-size: 100px 106px;
   }
-
 }
 
 
@@ -190,5 +174,4 @@
     min-height: 374px;
     padding: 77px 52px 55px;
   }
-
 }
